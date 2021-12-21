@@ -1,50 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 }
-.twit {
-  width: 610px;
-  height: 297px;
-  background-color: red;
-  padding: 25px 25px 0 25px;
+body {
+  background-color: gray;
 }
-.twit-hader {
+
+.container {
+  width: 414px;
+  height: 428px;
+  background-color: white;
+  padding: 12px 20px 13px 20px;
+}
+.container-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.start {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.twit-hader img {
-  width: 48px;
-  height: 48px;
+.container-header img {
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  margin-right: 15px;
 }
-.verified {
+.name {
+  margin-left: 8px;
+  font-size: 16px;
+}
+.name .user {
+  color: #141619;
+  font-weight: bold;
+}
+.name .username {
+  color: #687684;
+  font-weight: regular;
+}
+.container-text {
+  padding-top: 24px;
+  font-weight: 300;
+  font-size: 22px;
+  color: #687684;
+}
+.container-time {
   display: flex;
+  margin-top: 26px;
+  font-size: 12px;
+  font-weight: regular;
+  color: #687684;
 }
-.verified img {
-  height: 40px;
-}
-.button1 {
-  background-color: blue;
-  width: 90px;
-  height: 30px;
-  border-radius: 30px;
-}
-.verified-end {
-  display: flex;
-}
-.verified-end img {
-  width: 18px;
-  height: 18px;
-  margin-left: 12px;
-  margin-top: 8px;
+.platform {
+  color: #4c9eeb;
 }
