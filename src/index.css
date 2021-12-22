@@ -7,12 +7,14 @@
   font-family: "SF Pro Display", sans-serif;
 }
 body {
+  color:#687684;
   background-color: gray;
 }
 
 .container {
-  width: 414px;
-  height: 428px;
+  max-width: 414px;
+
+  max-height: 500px;
   background-color: white;
   padding: 12px 20px 13px 20px;
 }
@@ -35,22 +37,53 @@ body {
   font-weight: bold;
 }
 .name .username {
-  color: #687684;
   font-weight: regular;
 }
 .container-text {
   padding-top: 24px;
   font-weight: 300;
   font-size: 22px;
-  color: #687684;
+
 }
 .container-time {
   display: flex;
   margin-top: 26px;
   font-size: 12px;
   font-weight: regular;
-  color: #687684;
+
 }
 .platform {
   color: #4c9eeb;
+}
+.activity{
+  display: flex;
+  margin-top: 12px;
+}
+.activity div{
+  padding-left: 10px;
+  font-size: 16px;
+}
+.sepator{
+  width:386px;
+  height:0.1px;
+  background-color:#BDC5CD;
+  margin-left: -6px;
+  margin:12px 0px ;
+}
+.tweet-activity{
+  display: flex;
+}
+.like{
+  display: flex;
+  margin-right:10px;
+}
+.like-count{
+  color:#141619;
+  font-weight: bold;
+  margin-right: 3px;
+}
+.activity-button{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 44px;
 }

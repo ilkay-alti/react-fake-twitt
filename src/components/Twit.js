@@ -1,5 +1,14 @@
 import React from "react";
 import { ReactComponent as DownArrowIcon } from "../icons/DownArrowIcon.svg";
+import { ReactComponent as ActivityIcon } from "../icons/ActivityIcon.svg";
+import { ReactComponent as CommentIcon } from "../icons/CommentIcon.svg";
+
+import { ReactComponent as HeartIcon } from "../icons/HeartIcon.svg";
+
+import { ReactComponent as RetweetIcon } from "../icons/RetweetIcon.svg";
+import { ReactComponent as Shareicon } from "../icons/Shareicon.svg";
+
+
 
 export const Twit = () => {
   return (
@@ -7,7 +16,7 @@ export const Twit = () => {
       <div className="container-header">
         <div className="container-header">
           <img
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F10%2FNVIDIA_logo_black.png&f=1&nofb=1"
+            src="../icons/icon.png"
             alt="username"
           />
           <div className="name">
@@ -19,14 +28,47 @@ export const Twit = () => {
           <DownArrowIcon />
         </div>
       </div>
-      <div className="container-text">lorem ipsum dolor sit amet,</div>
+      <div className="container-text"> ipsum dollorem ipsum dollorem ipsum dollorem ipsum dollorem ipsum dollorem ipsum dollorem ipsum dolor sit amet,</div>
       <div className="container-time">
         <div>12:18</div>
-        <p> * </p>
+        <p> • </p>
         <div>2/14/20</div>
-        <p> * </p>
+        <p> • </p>
         <div className="platform">Twitter Web App</div>
       </div>
-    </div>
+      <div className="sepator"/>
+      <div className="activity">
+        <ActivityIcon/>
+        <div>View Tweet activity</div>
+      </div>
+      <div className="sepator"/>
+      <div className="tweet-activity">
+      <div className="like">
+          <div className="like-count">1</div>
+          <div className="like-text">Like</div>
+        </div>
+        <div className="like">
+          <div className="like-count">1</div>
+          <div className="like-text">RT</div>
+        </div>
+        <div className="like">
+          <div className="like-count">1</div>
+          <div className="like-text">Comment</div>
+        </div>
+        <div>
+       
+      </div>
+       
+      </div>
+      <div className="sepator"/>
+      <div className="activity-button">
+        <CommentIcon/>
+        <HeartIcon/>
+        <RetweetIcon/>
+        <Shareicon/>
+      </div>
+
+      </div>
+   
   );
 };
