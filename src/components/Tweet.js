@@ -14,12 +14,15 @@ export const Tweet = ({
   likes,
   retweets,
   commends,
+  date,
+  clock,
+  img,
 }) => {
   return (
     <div className={`container ${background}`}>
       <div className="container-header">
         <div className="container-header">
-          <img src="../icons/icon.png" alt="username" />
+          <img src={img} alt="username" />
           <div className="name">
             <div className="user">{name}</div>
             <div className="username">@{username}</div>
@@ -31,9 +34,9 @@ export const Tweet = ({
       </div>
       <div className="container-text">{text}</div>
       <div className="container-time">
-        <div>12:18</div>
+        <div>{clock}</div>
         <p> • </p>
-        <div>2 / 14 / 20</div>
+        <div>{date}</div>
         <p> • </p>
         <div className="platform">Twitter Web App</div>
       </div>

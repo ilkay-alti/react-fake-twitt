@@ -13,7 +13,8 @@ function App() {
   const [retweets, setRetweets] = useState("2");
   const [commends, setCommends] = useState("3");
   const [clock, setClock] = useState("12 : 12");
-
+  const [date, setDate] = useState("01/01/2021");
+  const [img, setImg] = useState([]);
   return (
     <div className="app-container">
       <LeftBar
@@ -25,8 +26,10 @@ function App() {
         setRetweets={setRetweets}
         setCommend={setCommends}
         setClock={setClock}
+        setDate={setDate}
+        setImg={setImg}
       />
-      {name}
+
       <div className="tweet-container">
         <Tweet
           name={name}
@@ -37,6 +40,8 @@ function App() {
           retweets={retweets}
           commends={commends}
           clock={clock}
+          date={date}
+          img={img}
         />
       </div>
     </div>
