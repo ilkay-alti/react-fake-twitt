@@ -7,16 +7,48 @@
   font-family: "SF Pro Display", sans-serif;
 }
 body {
-  color:#687684;
   background-color: gray;
+}
+.app-container {
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.light {
+  --tweet-bacground-color: #ffffff; /*background*/
+  --tweet-secondary-color: #5b7083; /*username*/
+  --tweet-primary-color: #000000; /*name*/
+}
+
+.dim {
+  --tweet-bacground-color: #15202b; /*background*/
+  --tweet-secondary-color: #8899a6; /*username*/
+  --tweet-primary-color: #ffffff; /*name*/
+}
+
+.dark {
+  --tweet-bacground-color: #000000; /*background*/
+  --tweet-secondary-color: #6e767d; /*username*/
+  --tweet-primary-color: #d9d9d9; /*name*/
+}
+/* ! ---------------------     Tweet     -------------------------------------- */
+
+.tweet-container {
+  display: flex;
+  align-items: center;
+  background-color: green;
+  min-width: 76%;
+  height: 952px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   max-width: 414px;
-
   max-height: 500px;
-  background-color: white;
   padding: 12px 20px 13px 20px;
+  background-color: var(--tweet-bacground-color);
 }
 .container-header {
   display: flex;
@@ -31,59 +63,75 @@ body {
 .name {
   margin-left: 8px;
   font-size: 16px;
+  color: var(--tweet-primary-color);
 }
 .name .user {
-  color: #141619;
   font-weight: bold;
 }
 .name .username {
   font-weight: regular;
+  color: var(--tweet-secondary-color);
 }
 .container-text {
   padding-top: 24px;
   font-weight: 300;
   font-size: 22px;
-
+  color: var(--tweet-primary-color);
 }
 .container-time {
   display: flex;
   margin-top: 26px;
   font-size: 12px;
   font-weight: regular;
-
+  color: var(--tweet-secondary-color);
 }
 .platform {
   color: #4c9eeb;
 }
-.activity{
+.activity {
   display: flex;
   margin-top: 12px;
+  color: var(--tweet-secondary-color);
 }
-.activity div{
+.activity div {
   padding-left: 10px;
   font-size: 16px;
 }
-.sepator{
-  width:386px;
-  height:0.1px;
-  background-color:#BDC5CD;
+.sepator {
+  width: 386px;
+  height: 0.08px;
+  background-color: var(--tweet-secondary-color);
   margin-left: -6px;
-  margin:12px 0px ;
+  margin: 12px 0px;
 }
-.tweet-activity{
+p {
+  padding: 0px 5px;
+}
+.tweet-activity {
   display: flex;
 }
-.like{
+.like {
   display: flex;
-  margin-right:10px;
+  margin-right: 10px;
 }
-.like-count{
-  color:#141619;
+
+.like-text {
+  color: var(--tweet-secondary-color);
+}
+
+.like-count {
   font-weight: bold;
+  color: var(--tweet-primary-color);
   margin-right: 3px;
 }
-.activity-button{
+.activity-button {
   display: flex;
   justify-content: space-between;
   margin: 0px 44px;
+}
+/* ! ---------------------     Tweet     -------------------------------------- */
+.bar-container {
+  width: 450px;
+  min-height: 100%;
+  color: var(--tweet-secondary-color);
 }
