@@ -43,6 +43,7 @@ const LeftBar = ({
       <div className="title">Name </div>
       <div className="input-area">
         <input
+          maxlength="20"
           type="text"
           onChange={(e) => {
             setName(e.target.value);
@@ -52,6 +53,7 @@ const LeftBar = ({
       <div className="title">Username </div>
       <div className="input-area">
         <input
+          maxlength="20"
           type="text"
           onChange={(e) => {
             setUsername(e.target.value);
@@ -61,6 +63,7 @@ const LeftBar = ({
       <div className="title">Tweet Content </div>
       <div className="input-area">
         <input
+          maxlength="120"
           type="text"
           onChange={(e) => {
             setText(e.target.value);
@@ -88,6 +91,7 @@ const LeftBar = ({
       <div className="title">Likes Count </div>
       <div className="input-area">
         <input
+          max="999"
           type="number"
           onChange={(e) => {
             setLikes(e.target.value);
@@ -97,6 +101,7 @@ const LeftBar = ({
       <div className="title">Comments Count </div>
       <div className="input-area">
         <input
+          max="999"
           type="number"
           onChange={(e) => {
             setCommend(e.target.value);
@@ -106,6 +111,7 @@ const LeftBar = ({
       <div className="title">Retweets Count </div>
       <div className="input-area">
         <input
+          max="999"
           type="number"
           onChange={(e) => {
             setRetweets(e.target.value);
